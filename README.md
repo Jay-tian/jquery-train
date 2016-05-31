@@ -2,12 +2,32 @@
 
 规则说明
 
-##1.答题规则
+##1.知识点
   
-  题目为demo－html中的js注释
+  jquery选择器：
+  	#id
+  	element
+  	.class
+  	:first
+  	:last
+  	attr
+  	:checked
+
+  筛选：
+  find
+  first
+  last
+  eq
+  next
+  prev
+  parent
+  closest
+  parents
+  siblings
+  children
 
 ##2.奖罚机制
 	
-  10道题目错俩道以上需要在开发小组群中发红包
+  错一题10个俯卧撑，上不封顶
 
-  优胜者可获额外零食一份	  		  	
+  	  		  	
