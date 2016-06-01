@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>  
     jquery-训练-Powered By 不二 </title>
-  <meta name="keywords" content="">
+  <meta name="keywords" content="我是keywords">
   <meta name="description" content=""> 
   <link href="../css/bootstrap.css" rel="stylesheet">
   <script src="../js/jquery.js"></script>  
@@ -23,23 +23,31 @@
 <div class="alert alert-info">选择器（Dom）  学习网址:  <a href="http://www.shifone.cc/all.html">http://www.shifone.cc/all.html</a>
 </div>
 <div class="alert alert-success ">
-  <h2 class="">Tips</h2>
+  <h2 class="">考试须知</h2>
   <ol>
+    <li>本次考试不允许自己添加id和class类</li>
     <li>尽量使用id值选取</li>
     <li>不选取通用的class类作为选择器</li>
     <li>多次操作相同的dom节点时,请通过变量保存dom对象 </li>
     <li>使用高效的选择器,减少选择器的使用</li>
     <li>良好的变量名命名  $###</li>
     <li>隐藏div 使用  $("###").hide()</li>
+    <li>取值 使用  $("###").html()  , input 节点取值 使用 $("###").val() </li>
     <li>优雅的使用链式写法</li>
   </ol>
 </div>
 <div class="alert alert-danger">
   <h2 class="">测试题目 ,写出符合生产环境下的代码</h2>
   <ul>
-    <li>1. 隐藏 class类 为 'emoticon-t' 和 'emoticon' 的节点下的第一个span标签 </li>
-    <li>2. 隐藏 </li>
-    <li>3.</li>
+    <li>1. 隐藏 class类 emoticon 的第二层div</li>
+    <li>2. 隐藏class类 emoticon 第一个div </li>
+    <li>3. 隐藏class类 emoticon 第三个div </li>
+    <li>4. 隐藏class类 emoticon 上个同胞节点 </li>
+    <li>5. 获得meta name为'keywords' 的值</li>
+    <li>6. 找到 input name 值为 '_username' 的同胞节点 </li>
+    <li>7. 找到 input name 值为 '_password' 的父节点  form元素</li>
+    <li>8. 根据7找到的form元素 找到 登陆按钮节点</li>
+    <li>9. 根据7找到的form元素 找到 子元素 有 class 'form-group' 的节点</li>
   </ul>
 </div>
 <div class="clearfix ">
@@ -61,12 +69,33 @@
         </div>
         <div class="form-group">
           <div class="controls">
-              <button class="btn btn-info">登陆</button>
+              <button class="btn btn-info" id ='login'>登陆</button>
          </div>
+        </div>
+        <div>
+          <div class="form-group">test</div>
         </div>
       </form>
 </div>
-    <p class="emoticon-t"><span class="label label-default">哈哈</span><span>哈哈1</span></p>
-    <p class="emoticon-"><span class="label label-default">嘿嘿</span><span>嘿嘿1</span></p>
+<div class="emoticon">
+    <p class="pull-left"><span class="label label-default">哈哈</span><span>哈哈1</span></p>
+    <p class="pull-right"><span class="label label-default">嘿嘿</span><span>嘿嘿1</span></p>
+    <div class="">
+        我是第一层div
+        <div class="">
+            我是第二层div
+            <div>我是第三层</div>
+        </div>
+    </div>
+    <div>
+      我是第一层div
+    </div>
+     <div>
+      我是第一层div
+    </div>
+    <div>
+      我是第一层div
+    </div>   
+</div>
 </body>
 </html>
