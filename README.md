@@ -3,8 +3,8 @@
 规则说明
 
 ##1.知识点
-  
-  jquery选择器：
+ 
+####jquery选择器：
   *	#id
   *	.class
   *	:first
@@ -22,7 +22,7 @@
   *	siblings
   *	children
 
-  jquery 属性操作
+####jquery 属性操作
   * attr
   * data
   * removeAttr
