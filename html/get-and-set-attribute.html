@@ -18,7 +18,28 @@
 </style>
 <script>
   $(function(){
-)}
+var img = $("#js-img").attr("src");
+
+console.log(img);
+var img1 = $("img").removeAttr("src");
+//console.log(img1);
+var howzhi = $(".js-howzhi").attr('target', '_blank');
+//console.log(howzhi);
+$("#colorful").click(function(){
+        if($(this).hasClass("black"))
+        $(this).removeClass("black");
+        else
+        $(this).addClass("black");
+   });
+
+$(".spacial-label span:first").removeClass("label-default");
+$("#login-form").attr("data-url","www.howzhi.com");
+$("input[name='agree']").attr("value","1");
+$("input[name='agree']").prop("checked", true);
+console.log($("input[name=agree]").val());
+var text = $(".form-group:last").text();
+console.log(text);
+})
 </script>
 <body style="padding-bottom: 200px;">
 <div class="alert alert-info">设置属性和得到属性  学习网址:  <a href="http://www.shifone.cc/all.html">http://www.shifone.cc/all.html</a>
